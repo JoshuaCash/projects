@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --grey: #eee;
+  --dark-grey: #222831;
+  --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Open Sans', 'sans-serif';
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #005490;
+  height: 100vh;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+header {
+  text-align: center;
+  color: #fff;
+  padding-bottom: 3rem;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1;
+}
+
+header h1 span {
+  font-weight: 700;
+}
+
+section .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form button{
+  outline: none;
+  border: 2px solid #fff;
+  border-radius: 5%;
+  padding: 1rem;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 700;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.modal {
+  /* display: none; */
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0, .5);
+  z-index: 100;
+}
+
+.modal-content {
+  width: 80%;
+  max-width: 60rem;
+  background-color: rgb(206, 218, 240);
+  margin: 20% auto;
+  padding: 5rem;
+  border: 1px solid #777;
+  border-radius: 4%;
+  animation: slide ease .8s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(-30);
+  }
+  100% {
+    transform: translateY(0)
+  }
+}
+
+.close {
+  position: relative;
+  top: -40px;
+  right: -510px;
+  color: #000;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
