@@ -97,12 +97,12 @@ form button:hover {
   padding: 5rem;
   border: 1px solid #777;
   border-radius: 4%;
-  animation: slide ease .8s;
+  animation: slide ease 0.8s;
 }
 
 @keyframes slide {
   0% {
-    transform: translateY(-30);
+    transform: translateY(-30rem);
   }
   100% {
     transform: translateY(0)
@@ -118,3 +118,15 @@ form button:hover {
   cursor: pointer;
 }
 
+.slide-up {
+  animation: slide-up ease 0.8s;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50rem)
+  }
+}

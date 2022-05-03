@@ -1,4 +1,4 @@
-"use strict"
+// "use strict"
 
 // function preFixSums(arr,k) {
 //     let subArrays = 0;
@@ -189,18 +189,82 @@
 // create a variable to store special characters in a regEX 
 // create an if else statement to check is there is a special character
 
-`\`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~`
+// `\`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~`
 
-function solve(s){
-  const specialChar = /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
-  let counterArray = [];
+// function solve(s){
+//   const specialChar = /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/; 
+//   let specCounter = 0;
+//   let upCounter = 0;
+//   let lowCounter = 0;
+//   let numCounter = 0;
+//   let newArray = [];
 
-  for (let i = 0; i < s.length; i++) {
-    if ( i === specialChar.test()) {
-      return i
-    }  
-  }
-   
- }
+  
+//     for (let j = 0; j < s.length; j++) {
+//       if ((/[A-Z]/.test(s.charAt(j)))) {
+//         upCounter++;
+//       }
+//     }
+//     newArray.push(upCounter);
 
-console.log(solve("bgA5<1d-tOwUZTS8yQ"),[7,6,3,2])
+//     for (let j = 0; j < s.length; j++) {
+//       if ((/[a-z]/.test(s.charAt(j)))) {
+//         lowCounter++;
+//       }
+//     }
+//     newArray.push(lowCounter);
+
+//     for (let j = 0; j < s.length; j++) {
+//       if ((/[0-9]/.test(s.charAt(j)))) {
+//         numCounter++;
+//       }
+//     }
+//     newArray.push(numCounter);
+
+//   for (let i = 0; i < s.length; i++) {
+//     if (specialChar.test(s[i])) {
+//       specCounter++;
+//     }  
+//   }
+//   newArray.push(specCounter);
+//   return newArray;
+// }
+
+
+// console.log(solve("bLg5-=1++++dP-tLPLw!8y"))
+
+
+// BEST ANSWER
+// const solve = (str) => (
+//   [/[A-Z]/, /[a-z]/, /\d/, /[\W]/].map(rgx => str.split(rgx).length - 1)
+// );
+
+// function filter_list(l) {
+//   let newList = [];
+//   for (e of l) {
+//     if(e === Number(e)) {
+//       newList.push(e)
+//     }
+//   }
+//   return newList;
+// }
+
+// console.log(filter_list([1,2,'aasf','1','123',123]))
+
+// function isTriangle(a,b,c) {
+//  return a + b > c && a + c > b && b + c > a ? true : false;
+// }
+
+// console.log(isTriangle(1,2,2))
+// console.log(isTriangle(7,2,2))
+
+// function findShort(s){
+//   let wordArray = s.split(' ');
+//   return wordArray.reduce((previous, current) => previous.length <= current.length ? previous : current).length
+// }
+
+// console.log(findShort("bitcoin take over the world maybe who knows perhaps"));
+
+function number(busStops) {
+  
+}
