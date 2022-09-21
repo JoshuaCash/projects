@@ -1,0 +1,130 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --clr-primary: #fff;
+    --clr-secondary: #368F8B;
+    --clr-accent: #5A3A31;
+    --shadow: 1px 1px 5px 1px rgba(0,0,0,.25);
+    --ff-secondaary: 'Montserrat', sans-serif;;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(52, 52, 52);
+    background-color: #DDBEA8;
+}
+
+.todo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 1rem 4rem 1rem;
+    width: 100%;
+    
+}
+
+.todo-container h1 {
+    font-family: var(--ff-secondary);
+    font-size: 55px;
+    font-weight: 600;
+    margin-bottom: .5rem;
+
+}
+
+
+.todo-input input{
+    outline: none;
+    border: none;
+    box-shadow: var(--shadow);
+    background-color: var(--clr-primary);
+    border-radius: 1rem;
+    padding: .3rem 1rem;    
+}
+
+.submit {
+    outline: none;
+    border: none;
+    padding: .3rem 1rem;
+    border-radius: 1rem;
+    background-color: var(--clr-secondary);
+    color: #DDBEA8;
+    font-weight: 900;
+    margin-left: 5px;
+    transition: .3s ease;
+}
+
+.submit::after {
+    opacity: .75%;
+}
+
+
+/* SECOND SECTION BORDER  */
+section:nth-child(2) {
+    border: 2px solid var(--clr-accent);
+    margin: 1rem;
+    border-radius: 5px;
+}
+
+.task-list {
+    margin-left: 2rem;
+    padding: 1rem;
+    margin: .5rem 0 2rem 0;
+}
+
+.task-input {
+    outline: none;
+    border: none;
+    background-color: var(--clr-primary);
+    border-radius: 1rem;
+    padding: .2rem 1rem;  
+    width: fit-content;
+}
+
+.task-container {
+    background-color: #5a3a312c;
+    padding: .5rem 1rem;
+    border-radius: 5rem;
+    box-shadow: var(--shadow);
+    margin: .8rem 0;
+}
+
+.tasks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.edit, .delete {
+    border: none;
+    border-radius: 5rem;
+    font-weight: 700;
+    color: #DDBEA8;
+    transition: .3s;
+}
+
+.edit:hover, .delete:hover {
+    opacity: 80%;
+}
+
+.edit:active {
+    background-color: #2b726e;
+}
+
+.delete:active {
+    background-color: #68555a;
+}
+
+.edit {
+    background-color: var(--clr-secondary);
+    padding: .3rem 1rem;
+}
+
+.delete {
+    background-color: #9D8189;
+    padding: .3rem .6rem;
+    margin-left: 5px;
+}
